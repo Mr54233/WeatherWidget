@@ -1,0 +1,43 @@
+{
+    "name": "com.mr.weather",
+    "version": "1.0.0",
+    
+    "title": {
+        "en": "Weather Widget Extension",
+        "zh": "天气挂件扩展"
+    },
+
+    "homepage": "https://github.com/Mr54233/WeatherWidget",
+
+    "bugs": {
+        "email": "ljx54233@qq.com",
+        "url": "https://github.com/Mr54233/WeatherWidget/issue"
+    },
+
+    "author": {
+        "name": "Mr_54",
+        "email": "ljx54233@qq.com",
+        "url": "https://github.com/Mr54233"
+    },
+
+    "resources": [
+        {
+            "location": "/widget-1",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "Weather Widget",
+                "zh": "天气挂件"
+            },
+            "preview": "preview.png",
+            "entry": "preset.json"
+        },{
+            "location": "/icons",
+            "catalog": "image",
+            "title": {
+                "en": "Weather Icons",
+                "zh": "天气图标"
+            },
+            "entry": "./Images"
+        }
+    ]
+}

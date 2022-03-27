@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <list name="tiles">
+        <map>
+            <list name="items">
+                <map>
+                    <value name="label">"今天"</value>
+                    <value name="content">"data-image"</value>
+                    <value name="width">3</value>
+                    <value name="height">3</value>
+                    <value name="data">{"mode":0,"unit":"","interval":60000,"update":{"address":"中华人民共和国北京市","geocode":"39.905,116.391","placeid":"71ca347e2948ee9490525aa5433fa91da6973ae51ea0f765fbe8e85b9f16c5df","postalkey":"1000:CN"},"process":[{"source":"nvg://system/process#script","parameter":{"init":"","execute":"context.output = \"nvg://Weather.54.com/icons#\" + context.output?.iconCode + \".png\""}}],"source":"nvg://weather.data.gpbeta.com/data#raw","value":"current"}</value>
+                    <value name="view">{"rounding":0}</value>
+                </map>
+                <map>
+                    <value name="label">"气温"</value>
+                    <value name="content">"data-text"</value>
+                    <value name="width">2</value>
+                    <value name="height">3</value>
+                    <value name="data">{"mode":0,"unit":"°C","interval":60000,"update":{"address":"中华人民共和国北京市","geocode":"39.905,116.391","placeid":"71ca347e2948ee9490525aa5433fa91da6973ae51ea0f765fbe8e85b9f16c5df","postalkey":"1000:CN"},"source":"nvg://weather.data.gpbeta.com/data#general","value":"temperature"}</value>
+                </map>
+            </list>
+        </map>
+        <map>
+            <list name="items">
+                <map>
+                    <value name="label">"High"</value>
+                    <value name="content">"data-text"</value>
+                    <value name="width">2.5</value>
+                    <value name="data">{"mode":2,"unit":"°C","interval":60000,"update":{"address":"中华人民共和国北京市","geocode":"39.905,116.391","placeid":"71ca347e2948ee9490525aa5433fa91da6973ae51ea0f765fbe8e85b9f16c5df","postalkey":"1000:CN"},"process":[{"source":"nvg://system/process#script","parameter":{"init":"","execute":"context.output = \"最高\" + context.output +\"°C\""}}],"source":"nvg://weather.data.gpbeta.com/data#general","value":"temperature"}</value>
+                </map>
+                <map>
+                    <value name="label">"Low"</value>
+                    <value name="content">"data-text"</value>
+                    <value name="width">2.5</value>
+                    <value name="data">{"mode":3,"unit":"°C","interval":60000,"update":{"address":"中华人民共和国北京市","geocode":"39.905,116.391","placeid":"71ca347e2948ee9490525aa5433fa91da6973ae51ea0f765fbe8e85b9f16c5df","postalkey":"1000:CN"},"process":[{"source":"nvg://system/process#script","parameter":{"init":"","execute":"context.output = \"最低\" + context.output +\"°C\""}}],"source":"nvg://weather.data.gpbeta.com/data#general","value":"temperature"}</value>
+                </map>
+            </list>
+        </map>
+    </list>
+    <value name="background">{"normal":"nvg://hud.widget.gpbeta.com/background#GGO-Status.9.png","hovered":"nvg://hud.widget.gpbeta.com/background#GGO-Status-hovered.9.png","pressed":"nvg://hud.widget.gpbeta.com/background#GGO-Status-pressed.9.png"}</value>
+</map>
